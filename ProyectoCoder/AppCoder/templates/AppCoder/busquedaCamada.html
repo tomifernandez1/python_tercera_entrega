@@ -1,0 +1,23 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario Buscar</title>
+</head>
+<body>
+    <p1> Buscador de <strong> CAMADAS: </strong> </p1>
+    <form action="/AppCoder/buscar/" method="GET">
+        <input type="number" name="camada" id="camada">
+        <input type="submit" value="Buscar"/>
+    </form>
+</body>
+</html>
+
+{% endblock %}
